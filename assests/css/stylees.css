@@ -1,0 +1,9 @@
+.pad{
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.img1{
+    background-image: url(/assests/img/body-i.jpg);
+    background-position: center;
+    background-position-y: 2rem;
+}
