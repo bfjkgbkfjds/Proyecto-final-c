@@ -1,9 +1,56 @@
-.pad{
-    padding: 1rem 1rem 1rem 1rem;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.img1{
-    background-image: url(/assests/img/body-i.jpg);
-    background-position: center;
-    background-position-y: 2rem;
+.Titulo {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 .25rem .5rem #212121;
+    border-radius: .5rem;
+}
+
+.slider img {
+    width: 100%;
+    scroll-snap-align: start;
+    object-fit: contain;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background-color: #FFF;
+    opacity: .75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
 }
