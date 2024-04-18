@@ -155,3 +155,8 @@ footer {
     background-image: url(/assests/img/fondo.jpg);
     background-position-x: 10rem ;  
 }
+
+.fondo2{
+    background-image: url(/assests/img/Fondo2.jpg);
+    background-position-x: 10rem ;  
+}
