@@ -151,3 +151,7 @@ footer {
     height: 40rem;
 }
 
+.fondo{
+    background-image: url(/assests/img/fondo.jpg);
+    background-position-x: 10rem ;  
+}
