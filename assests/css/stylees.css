@@ -143,3 +143,11 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.nav-img-reg{
+    background-color: #212121;
+    background-position: center;
+
+    height: 40rem;
+}
+
