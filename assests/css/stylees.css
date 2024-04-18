@@ -1,3 +1,17 @@
+body {
+    background-color: #212121;
+    color: white;
+}
+
+.nav-img {
+    background-image: url(/assests/img/body-i.jpg);
+    background-position: center;
+}
+
+.navbar-brand img {
+    width: 100px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -53,4 +67,79 @@
 
 .slider-nav a:hover {
     opacity: 1;
+}
+
+.altura {
+    height: 18rem;
+}
+
+.pad {
+    padding-top: 5rem;
+}
+
+.pad-img {
+    padding-top: 10rem;
+    padding-left: 10rem;
+}
+
+.espacio {
+    display: flex;
+    flex-direction: row;
+    height: 100rem;
+}
+
+.inf-img {
+    padding-left: 10rem;
+    padding-top: 5rem;
+    height: 100rem;
+    width: 40%;
+}
+
+.card img {
+    transition: transform 0.2s;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}
+
+.espacio-info {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100rem;
+}
+
+.nombre-com {
+    padding-left: 10rem;
+    padding-top: 10rem;
+    height: 15rem;
+    width: 100%;
+}
+
+.precio {
+    padding-left: 10rem;
+    height: 5rem;
+    width: 100%;
+    color: red;
+}
+
+.cant {
+    padding-left: 10rem;
+    height: 5rem;
+    width: 100%;
+}
+
+.añadir {
+    padding-left: 10rem;
+    padding-top: 5rem;
+    height: 10rem;
+    width: 50%;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
