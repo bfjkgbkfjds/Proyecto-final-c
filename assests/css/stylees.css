@@ -157,6 +157,12 @@ footer {
 }
 
 .fondo2{
-    background-image: url(/assests/img/Fondo2.jpg);
+    background-color: gray;
     background-position-x: 10rem ;  
 }
+
+
+.espacio{
+  margin-top: 5cm;
+}
+
