@@ -10,11 +10,11 @@
     <style>
         body {
             background-image: url(/assests/img/fondo.jpg);
-            background-position-x: 10rem ;  
+            background-position-x: 10rem;
         }
-
-        .let{
-            color: rgb(255, 255, 255);
+        
+        .let {
+            color: rgb(249, 249, 249);
         }
         
         .navbar-text {
@@ -102,52 +102,12 @@
             </div>
             <button type="submit" class="btn btn-primary">Registrarse</button>
         </form>
+        <div id="registroExitoso" class="alert alert-success" style="display: none;">
+            Registro exitoso. ¡Bienvenido!
+        </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script>
-        document.getElementById("registerForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Evita que el formulario se envíe
-
-            // Obtén los valores del formulario
-            var nombre = document.getElementById("nombre").value;
-            var apellido = document.getElementById("apellido").value;
-            var email = document.getElementById("email").value;
-            var password = document.getElementById("password").value;
-            var confirm_password = document.getElementById("confirm_password").value;
-
-            // Verifica si las contraseñas coinciden
-            if (password !== confirm_password) {
-                alert("Las contraseñas no coinciden.");
-                return;
-            }
-
-            // Crea un objeto de usuario
-            var user = {
-                nombre: nombre,
-                apellido: apellido,
-                email: email,
-                password: password
-            };
-
-            // Guarda el objeto de usuario en localStorage
-            localStorage.setItem("user", JSON.stringify(user));
-
-            // Muestra el nombre del usuario
-            document.getElementById("usernameDisplay").innerText = "Bienvenido/a, " + nombre;
-
-            // Redirige a la página de confirmación de inicio de sesión
-            window.location.href = "login.html";
-        });
-
-        // Muestra el nombre de usuario si está logeado
-        window.addEventListener("load", function() {
-            var user = JSON.parse(localStorage.getItem("user"));
-            if (user) {
-                document.getElementById("usernameDisplay").innerText = "Bienvenido/a, " + user.nombre;
-            }
-        });
-    </script>
+    <script src="./assests/js/usuario.js"></script>
 </body>
 
 </html>

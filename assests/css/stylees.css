@@ -1,6 +1,6 @@
 body {
     background-color: #212121;
-    color: white;
+    color: #FFF;
 }
 
 .nav-img {
@@ -144,25 +144,22 @@ footer {
     width: 100%;
 }
 
-.nav-img-reg{
+.nav-img-reg {
     background-color: #212121;
     background-position: center;
-
     height: 40rem;
 }
 
-.fondo{
+.fondo {
     background-image: url(/assests/img/fondo.jpg);
-    background-position-x: 10rem ;  
+    background-position-x: 10rem;
 }
 
-.fondo2{
+.fondo2 {
     background-color: gray;
-    background-position-x: 10rem ;  
+    background-position-x: 10rem;
 }
 
-
-.espacio{
-  margin-top: 5cm;
+.espacio {
+    margin-top: 5cm;
 }
-
