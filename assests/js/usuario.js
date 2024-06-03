@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
             return;
         }
 
+        
         const user = {
             nombre: nombre,
             apellido: apellido,
