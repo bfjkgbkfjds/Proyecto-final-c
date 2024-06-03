@@ -9,21 +9,21 @@ document.addEventListener("DOMContentLoaded", function() {
             }
             data.comics.forEach(comic => {
                 const card = document.createElement('div');
-                card.className = 'col-md-3';
+                card.className = 'col-md-4'; // Cambiado a col-md-4 para 3 cards por fila
                 const imageUrl = comic.imagen;
                 const validImage = imageUrl && imageUrl.startsWith('http');
                 const imageElement = validImage ? `<img src="${imageUrl}" class="card-img-top" alt="${comic.name}">` : '<p>Imagen no disponible</p>';
 
                 card.innerHTML = `
-          <div class="card">
-            ${imageElement}
-            <div class="card-body">
-              <h5 class="card-title">${comic.name}</h5>
-              <p class="card-text">Precio: ${comic.precio}</p>
-              <button class="btn btn-primary btn-details" data-id="${comic.id}">Ver detalles</button>
-            </div>
-          </div>
-        `;
+                <div class="card">
+                    ${imageElement}
+                    <div class="card-body">
+                    <h5 class="card-title">${comic.name}</h5>
+                    <p class="card-text">Precio: ${comic.precio}</p>
+                    <button class="btn btn-primary btn-details" data-id="${comic.id}">Ver detalles</button>
+                    </div>
+                </div>
+                `;
                 comicsContainer.appendChild(card);
             });
 
