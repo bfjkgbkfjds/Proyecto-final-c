@@ -27,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function() {
 cartContainer.appendChild(comicCard);
 });
 
-// Añadir event listener para botones "Eliminar del carrito"
 document.querySelectorAll('.btn-remove-from-cart').forEach(button => {
 button.addEventListener('click', function() {
     const comicId = this.getAttribute('data-id');
@@ -36,11 +35,10 @@ button.addEventListener('click', function() {
 });
 });
 
-// Función para eliminar cómics del carrito
 function removeFromCart(comicId) {
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 cart = cart.filter(comic => comic.id != comicId);
 localStorage.setItem('cart', JSON.stringify(cart));
 alert('Cómic eliminado del carrito');
-location.reload(); // Recargar la página para actualizar el carrito
+location.reload(); 
 }
