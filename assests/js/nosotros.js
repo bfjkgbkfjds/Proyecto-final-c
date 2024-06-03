@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <h2>Nuestra historia</h2>
                 <p>${info.historia || 'Información no disponible'}</p>
             `;
-
+            
             const row1 = document.createElement('div');
             row1.className = 'row centered-content';
             row1.appendChild(quienesSomosSection);
