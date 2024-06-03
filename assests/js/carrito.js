@@ -35,6 +35,7 @@ button.addEventListener('click', function() {
 });
 });
 
+
 function removeFromCart(comicId) {
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 cart = cart.filter(comic => comic.id != comicId);
