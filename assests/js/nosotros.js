@@ -39,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
             contentDiv.appendChild(row1);
             contentDiv.appendChild(row2);
 
-            // Crear botón de redirección con color rojo
             const redirectButton = document.createElement('button');
             redirectButton.className = 'btn btn-danger btn-back'; // Agregar clase btn-danger para color rojo
             redirectButton.innerText = 'Volver';
@@ -49,7 +48,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 window.location.href = 'index.html';
             });
 
-            // Añadir el botón debajo de las secciones
             const buttonRow = document.createElement('div');
             buttonRow.className = 'row centered-content';
             buttonRow.appendChild(redirectButton);
